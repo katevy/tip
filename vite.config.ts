@@ -8,8 +8,8 @@ import path from 'path';
 export default defineConfig({
   root: "./src",
   plugins: [react(), tsconfigPaths(),
-
   svgr()],
+  base: "/tip/",
   build: {
     outDir: '../out/renderer'
   },

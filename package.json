@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://katevy.github.io/utip",
+  "homepage": "https://katevy.github.io/tip",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d out/renderer"
   },
   "dependencies": {
     "gh-pages": "^6.2.0",
