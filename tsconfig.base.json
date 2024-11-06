@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "useDefineForClassFields": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "@assets/*": [
+                "src/assets/*"
+            ],
+            "@entities/*": [
+                "src/entities/*"
+            ],
+            "@pages/*": [
+                "src/pages/*"
+            ],
+            "@src/*": [
+                "src/*"
+            ],
+            "@widgets/*": [
+                "src/widgets/*"
+            ],
+            "@features/*": [
+                "src/features/*"
+            ],
+            "@shared/*": [
+                "src/shared/*"
+            ],
+            "@server/*": [
+                "src/server/*"
+            ],
+            "@styles": [
+                "src/shared/styles/index.scss"
+            ],
+            "*": [
+                "./src/*"
+            ]
+        },
+        "types": [
+            "vite-plugin-svgr/client",
+            "node",
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+@use "@styles/theme/position.scss" as *;
+
+.root {
+    position: relative;
+}
+
+.loader {
+    @include center-both
+}

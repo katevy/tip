@@ -1,0 +1,42 @@
+.data-grid {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--light-gray);
+    margin: 20px 1em;
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border-spacing: 0;
+
+        tr,
+        th,
+        td {
+            box-sizing: border-box;
+
+        }
+
+        td.row-control {
+            box-sizing: border-box;
+            padding: 0;
+            width: 22px;
+            height: 22px;
+            left: 0;
+            z-index: 9;
+
+            img {
+                height: inherit;
+                width: inherit;
+                fill: var(--dark-color);
+            }
+        }
+
+    }
+}

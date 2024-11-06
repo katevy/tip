@@ -1,0 +1,42 @@
+tbody {
+    width: 100%;
+
+    tr {
+        td {
+            position: relative;
+            height: 27px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 300px;
+            padding: 0.5em;
+        }
+
+        &:hover {
+            td.row-control.left {
+                &::after {
+                    position: absolute;
+                    content: '\23F6';
+                    right: -5;
+                    top: 0.5em;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    .drag-over {
+        background-color: var(--gray-color);
+        border: 2px dashed var(--secondary-color);
+        transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+        z-index: 15;
+    }
+
+    .drag-over td {
+        border-top: 2px dashed var(--secondary-color);
+        border-bottom: 2px dashed var(--secondary-color);
+        border-left: none;
+        border-right: none;
+    }
+}

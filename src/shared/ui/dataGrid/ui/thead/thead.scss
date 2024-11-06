@@ -1,0 +1,76 @@
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--secondary-color);
+
+    tr {
+        box-sizing: border-box;
+        border: 0;
+    }
+
+    th {
+        position: relative;
+        cursor: default;
+        text-align: left;
+        border-top: 0;
+        border-left: 0;
+        padding: .5em;
+
+        span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .resizer {
+            z-index: 100;
+            background-color: transparent;
+
+            &:hover,
+            &:active {
+                background-color: var(--light-gray);
+                opacity: .15;
+            }
+        }
+
+        .head-cell {
+            text-align: center;
+
+            &-content {
+                display: flex;
+                justify-content: space-between;
+
+                .sort-arrow {
+                    opacity: 0;
+                    height: 1em;
+                    width: 1em;
+
+                    &:hover {
+                        transition: .2s;
+                        background-color: transparent;
+                    }
+
+                    img {
+                        height: inherit;
+                        width: inherit;
+                    }
+
+                    &.rotate {
+                        transform: rotate(180deg);
+                    }
+                }
+
+            }
+        }
+
+        &.head-cell:hover {
+
+            div {
+                .sort-arrow {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

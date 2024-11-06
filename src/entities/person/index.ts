@@ -1,0 +1,1 @@
+export { personListStore } from "./model/store";

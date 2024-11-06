@@ -1,0 +1,41 @@
+.button {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 28px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    gap: 18px;
+    line-height: 130%;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &:disabled {
+        opacity: 1;
+    }
+
+    .loader>div {
+        border-color: var(--light-color);
+        border-bottom-color: transparent;
+    }
+}
+
+.submit {
+    background-color: var(--primary-color);
+}
+
+.button_disabled {
+    background: var(--gray-color);
+}
+
+.button_load {
+    padding: 15px 22px 15px 19px
+}

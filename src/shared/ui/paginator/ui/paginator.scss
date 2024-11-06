@@ -1,0 +1,28 @@
+.paginator {
+    display: flex;
+    user-select: none;
+    justify-content: space-between;
+    margin: 0 1em;
+
+
+    svg {
+        stroke: var(--dark-color);
+    }
+
+    .current {
+        pointer-events: none;
+        background-color: var(--light-gray);
+
+        &:hover {
+            background-color: var(-light-color);
+        }
+    }
+
+    &__limit-selector {
+        display: flex;
+    }
+
+    &__page-controls {
+        display: flex;
+    }
+}

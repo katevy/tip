@@ -1,0 +1,32 @@
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    border: none;
+    background: var(--light-color);
+    color: var(--dark-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+    outline: none;
+
+    &::placeholder {
+        color: var(--secondary-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 180%;
+    }
+
+    &:focus {
+        outline: 1px solid var(--primary-color);
+    }
+}
+
+.input_disabled {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    opacity: .7;
+}
